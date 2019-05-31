@@ -1,0 +1,23 @@
+<div class="content-top">
+ <div class="post-top">
+  <h1><%= @nickname %><span>の</span>profile</h1>
+   <p>Profile
+Welcome to Tenlife blog!!
+
+I'm doing Skiing and Traveling!
+
+From Niseko,Japan
+
+18years old
+
+Tenra Katsuno</p>
+ </div>
+</div>
+
+
+
+<div class="contents row">
+  <p><%= @nickname %>さんの投稿一覧</p>
+  <%= render @tweets %>
+  <%= paginate(@tweets) %>
+</div>

@@ -1,0 +1,11 @@
+<div class="box-top">
+ <h1>Welcome to Tabitter!</h1>
+ <h2>Tell me about your life!</h2>
+</div>
+
+<div class="contents row">
+  <% @tweets.each do |tweet| %>
+  <%= render partial: "tweet", locals: {tweet: tweet} %>
+  <% end %>
+  <%= paginate(@tweets) %>
+</div>
